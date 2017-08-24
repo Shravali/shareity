@@ -1,7 +1,9 @@
 {
   "name": "shareity",
   "version": "1.0.0",
-  "main": "node app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
   "dependencies": {
     "angular": "^1.6.6",
     "angular-route": "^1.6.6",
