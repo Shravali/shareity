@@ -1,12 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="share">
 <head>
     <meta charset="UTF-8">
     <title>SHAREity</title>
+    <!-- CSS: Vendors  -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- CSS: App -->
+    <!--<link href="css/style.css" rel="stylesheet"/>-->
+    <!-- JS: Vendors -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular-route.min.js"></script>
+    <!-- JS: App -->
+    <script src="app.js"></script>
+    <script src="config.js"></script>
+    <!-- JS: Controllers -->
+    <script src="views/home/controllers/home.controller.client.js"></script>
+    <!-- JS: Services -->
+    <script src="services/home.service.client.js"></script>
 </head>
 <body>
+<div ng-view>
 <h1>SHAREity Homepage</h1>
 <div>Coming soon!</div>
-
+</div>
 </body>
 </html>
