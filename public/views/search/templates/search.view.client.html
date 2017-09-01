@@ -1,0 +1,26 @@
+<div class="container-fluid">
+    <h1>Charity Search</h1>
+    <h2>Search by Charity Name</h2>
+    <input placeholder="FIGHT HUNGER WITH HUNGER"
+           ng-model="charityTitle"
+           class="form-control"/>
+    <button ng-click="model.searchByCharityName(charityTitle)" class="btn btn-primary btn-block">
+        Search
+    </button>
+
+    <table class="table">
+        <tr ng-repeat="charity in model.charities.data">
+            <td>
+                <a href="#!/details/{{charity.ein}}">
+                    {{charity.charityName}}
+                </a>
+            </td>
+            <td>
+                {{charity.category}}
+            </td>
+        </tr>
+    </table>
+
+
+</div>
+
