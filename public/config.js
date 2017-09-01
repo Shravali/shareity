@@ -4,6 +4,12 @@
         .config(configuration);
     function configuration($routeProvider) {
         $routeProvider
+            .when("/", {
+                templateUrl: "views/search/templates/search.view.client.html",
+                controller: "searchController",
+                controllerAs: "model"
+
+            })
             .when("/search", {
                 templateUrl: "views/search/templates/search.view.client.html",
                 controller: "searchController",
