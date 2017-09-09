@@ -7,9 +7,8 @@
     <button ng-click="model.searchByCharityName(charityTitle)" class="btn btn-primary btn-block">
         Search
     </button>
-
     <table class="table">
-        <tr ng-repeat="charity in model.charities.data">
+        <tr ng-repeat="charity in model.charities">
             <td>
                 <a href="#!/details/{{charity.ein}}">
                     {{charity.charityName}}
