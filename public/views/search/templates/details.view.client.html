@@ -1,3 +1,25 @@
-<h1>Charity Details</h1>
+<h1>{{model.charity.charityName}}</h1>
+{{model.charity}}
+<table class="table">
+    <tr>
+        <td>
+            <a href="{{model.charity.charityNavigatorURL}}">
+                {{model.charity.charityNavigatorURL}}
+            </a>
+        </td>
 
-{{model}}
+        <td>
+            {{model.charity.mission}}
+        </td>
+
+        <td>
+            <a href="{{model.charity.websiteURL}}">
+                {{model.charity.websiteURL}}
+            </a>
+        </td>
+        <td>
+            {{model.charity.ratingHistory}}
+        </td>
+
+    </tr>
+</table>

@@ -10,14 +10,21 @@
     <table class="table">
         <tr ng-repeat="charity in model.charities">
             <td>
-                <a href="#!/details/{{charity.ein}}">
+                <a href="https://www.charitynavigator.org/?bay=search.profile&ein={{charity.ein}}">
                     {{charity.charityName}}
                 </a>
             </td>
             <td>
-                {{charity.category}}
+                <a href="{{charity.websiteURL}}">
+                {{charity.websiteURL}}
+                </a>
+            </td>
+
+            <td>
+                {{charity.category.categoryName}}
             </td>
         </tr>
+
     </table>
 
 
