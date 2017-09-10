@@ -16,6 +16,25 @@
                 controllerAs: "model"
 
             })
+            .when("/login", {
+                templateUrl: "views/user/templates/login.view.client.html",
+                controller: "loginController",
+                controllerAs: "model"
+
+            })
+            .when("/register", {
+                templateUrl: "views/user/templates/register.view.client.html",
+                controller: "registerController",
+                controllerAs: "model"
+
+            })
+            .when("/profile", {
+                templateUrl: "views/user/templates/login.view.client.html",
+                controller: "profileController",
+                controllerAs: "model"
+
+            })
+
             .when("/details/:ein", {
                 templateUrl: "views/search/templates/details.view.client.html",
                 controller: "detailsController",

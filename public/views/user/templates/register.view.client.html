@@ -1,0 +1,34 @@
+<div ng-include src="'views/home/templates/nav.html'"></div>
+
+<div class="container-fluid">
+
+    <h2>Register</h2>
+
+    <label for="username">Username</label>
+    <input name="username"
+           placeholder="alice"
+           class="form-control"
+           id="username"/>
+
+    <label for="password">Password</label>
+    <input name="password"
+           placeholder="qwe123$%^"
+           type="password"
+           class="form-control"
+           id="password"/>
+
+    <label for="password2">Verify Password</label>
+    <input name="password2"
+           placeholder="qwe123$%^"
+           type="password"
+           class="form-control"
+           id="password2"/>
+
+    <a class="btn btn-default btn-primary btn-block"
+       ng-click="model.registerUser(user)"
+       role="button">Register</a>
+
+    <a class="btn btn-default btn-danger btn-block"
+       href="#!/login"
+       role="button">Cancel</a>
+</div>
