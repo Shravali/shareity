@@ -1,6 +1,4 @@
-<!DOCTYPE html>
 <html ng-app="share">
-<head>
     <meta charset="UTF-8">
     <title>SHAREity</title>
     <!-- CSS: Vendors  -->
@@ -17,14 +15,10 @@
     <!-- JS: Controllers -->
     <script src="views/search/controllers/search.controller.client.js"></script>
     <script src="views/search/controllers/details.controller.view.client.js"></script>
+    <script src="views/home/controllers/home.controller.view.client.js"></script>
+
     <!-- JS: Services -->
     <script src="services/search.service.client.js"></script>
-</head>
-<body>
-<div ng-view>
-<h1>SHAREity Homepage</h1>
-<div>Coming soon!</div>
+<ng-view>
 
-</div>
-</body>
-</html>
+</ng-view>
