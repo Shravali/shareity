@@ -11,10 +11,13 @@
                 .searchByCharityName(charityName)
                 .then(renderCharities);
 
+
         }
 
         function renderCharities(charities){
             model.charities = charities;
+            model.display = true;
+
         }
 
 

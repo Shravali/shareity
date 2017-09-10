@@ -4,10 +4,24 @@
     <input placeholder="FIGHT HUNGER WITH HUNGER"
            ng-model="charityTitle"
            class="form-control"/>
-    <button ng-click="model.searchByCharityName(charityTitle)" class="btn btn-primary btn-block">
+    <button ng-click="model.searchByCharityName(charityTitle)" value="Search" class="btn btn-primary btn-block">
         Search
     </button>
+    <div ng-show=model.display>
     <table class="table">
+        <thead>
+        <tr>
+            <th>
+                Charity Name
+            </th>
+            <th>
+                Charity Website
+            </th>
+            <th>
+                Category
+            </th>
+        </tr>
+        </thead>
         <tr ng-repeat="charity in model.charities">
             <td>
                 <a href="https://www.charitynavigator.org/?bay=search.profile&ein={{charity.ein}}">
@@ -26,6 +40,7 @@
         </tr>
 
     </table>
+    </div>
 
 
 </div>
